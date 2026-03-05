@@ -1,5 +1,9 @@
 import java.util.*;
 
+
+// Composite pattern composes abject into tree like structure representing a part whole heirarchy.
+// It lets the client treat individual object(files such as) and compositions of objects(folders) uniformly
+
 // Contract
 // Implementing a file system
 interface FileSystemItem{
