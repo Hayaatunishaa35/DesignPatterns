@@ -1,6 +1,6 @@
 import java.util.*;
 
-// Base class : Consist template method implementation
+// Base class : Consists template method implementation
 abstract class ModelTrainer{
     protected void loadData(){
         System.out.println("Loading data from common source..");
@@ -11,7 +11,7 @@ abstract class ModelTrainer{
     protected abstract void evaluateModel();
 
     protected void saveModel(){
-        System.out.println("Saving data at disk");
+        System.out.println("Saving Model at disk");
     }
 
     // Template method : consists order of execution
@@ -66,6 +66,6 @@ public class TemplateDesignPattern {
         neuralModelTrainer.trainPipeline();
 
         ModelTrainer decisionModelTrainer = new DecisionTreeTrainer();
-        decisionModelTrainer.trainPipeline();;
+        decisionModelTrainer.trainPipeline();
     }
 }
